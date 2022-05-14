@@ -1,0 +1,14 @@
+sqlite3 moviesdb.db
+create table movies (movie varchar(20),actor varchar(20),actress varchar(20),year_of_release int(20),director varchar(20));
+
+insert into movies values('Interstellar','Matthew McConoughe','Anne Hathaway', 2014 ,'Christopher Nolan'),
+('Martian','Matt Damon','Jessica Chastain', 2015 ,'Ridley Scott'),
+('Inception','Leonardo DiCaprio','Marion Cottilard', 2010 ,'Christopher Nolan');
+
+TO select all the rows:-
+
+SELECT * FROM movies;
+
+A query with parameter like actor name to select movies based on the actor's name:-
+
+SELECT * FROM movies WHERE actor = 'Matt Damon';
